@@ -1,0 +1,1167 @@
+@import "https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap";
+
+* {
+  box-sizing: border-box;
+}
+html {
+  @font-face {
+    font-family: "Jost", sans-serif;
+    src: url(../fonts/Jost-VariableFont_wght.ttf) format("ttf");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+    font-size: 16px;
+  }
+}
+.container {
+  max-width: 86.25rem;
+  margin: auto;
+  height: auto;
+}
+.header {
+  /* width: max-content; */
+}
+
+.navbar {
+  width: 100%;
+  min-height: 2.4375rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 4;
+  background-color: #fff;
+  transition: background-color 0.2s, height 0.2s;
+  font-family: "Jost", sans-serif;
+  color: #282739;
+}
+.header-navbar-link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  color: #5d6c7b;
+  margin-right: 1.875rem;
+  margin-top: 0.8875rem;
+  margin-bottom: 0.6875rem;
+}
+.navbar-link-service {
+  margin-left: 10.3125rem;
+}
+.header-icon-mobile:not(:last-child) {
+  margin-right: 0.5313rem;
+}
+/* .header-phone {
+  display: flex;
+  align-items: center;
+} */
+.header-phone-link {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #282739;
+  margin-left: 39.8125rem;
+  text-decoration: none;
+  margin-top: 0.8875rem;
+  margin-bottom: 0.6875rem;
+}
+.header-icon-mobile {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5313rem;
+}
+
+.header-nav-border {
+  border: 1px solid #ecf3ff;
+  width: 90rem;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+}
+.header-name {
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  color: #282739;
+  margin-left: 8.4125rem;
+  padding-top: 0.2rem;
+  margin-right: 2.3188rem;
+}
+.header-button {
+  border: 1.5px solid #6f73ee;
+  border-radius: 5px;
+  width: 7.125rem;
+  height: 2.5rem;
+  background: #6f73ee;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  margin-top: 2.9375rem;
+  width: 100%;
+  margin-bottom: 1.4rem;
+}
+.header-button-wrp {
+  display: flex;
+}
+.header-menu-line:first-child {
+  margin-top: 0.7375rem;
+}
+.header-menu-line {
+  border: 1.3px solid #fff;
+  width: 0.8125rem;
+  height: 0px;
+  background: #fff;
+  margin-left: 0.8688rem;
+  margin-bottom: 0.2125rem;
+  margin-right: 0.7125rem;
+}
+.header-menu-line-short {
+  border: 1.3px solid #fff;
+  width: 7px;
+  height: 0px;
+  margin-left: 1.3125rem;
+}
+.header-button-text {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 0.6rem;
+}
+.header-search-box {
+  display: flex;
+  align-items: center;
+  padding-left: 1.25rem;
+  width: 38.7875rem;
+  height: 2.5rem;
+}
+.header-search-box input {
+  width: 39.375rem;
+  height: 2.5rem;
+  border: 1.5px solid #6f73ee;
+}
+.header-search-button {
+  border: 1.5px solid #6f73ee;
+  border-radius: 0 5px 5px 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #6f73ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-search-input {
+  font-family: "Jost", sans-serif;
+  padding-left: 1.05rem;
+  border: 1.5px solid #6f73ee;
+  border-radius: 5px 0 0 5px;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #5d6c7b;
+}
+.header-search-shopping-cart {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #282739;
+}
+.header-search-icon {
+  display: flex;
+  align-items: center;
+}
+.header-search-icon-balance {
+  margin-left: 2.9375rem;
+  margin-right: 1.5625rem;
+}
+.header-search-icon-blackheart {
+  margin-right: 1.5625rem;
+}
+.header-search-icon-shopping-cart1 {
+  margin-right: 0.625rem;
+}
+.header-image {
+  border-radius: 0.4rem;
+  /* width: 86.25rem; */
+  width: auto;
+  height: 27.8125rem;
+  position: absolute;
+}
+/* .header-image-wrp {
+  overflow: hidden;
+} */
+.header-address-container {
+  display: flex;
+  position: relative;
+  margin-left: 8.4375rem;
+  font-family: "Jost", sans-serif;
+  padding-top: 3.6375rem;
+  width: max-content;
+}
+.header-address {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #fff;
+  margin-right: 0.625rem;
+}
+.header-addres-icon {
+  margin-right: 0.5125rem;
+}
+.header-address-schedule {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #fff;
+  opacity: 0.7;
+}
+.header-title {
+  font-weight: 600;
+  font-size: 2.1875rem;
+  text-transform: uppercase;
+  color: #fff;
+  width: 50%;
+  margin-top: 1.275rem;
+  line-height: 139.2%;
+  margin-bottom: 0;
+}
+.header-text {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #fff;
+  margin-top: 0.675rem;
+  width: 70%;
+}
+.header-testdrive-container {
+  position: relative;
+  font-family: "Jost", sans-serif;
+  margin-left: 8.5rem;
+}
+.header-chapter-wrapper {
+  display: flex;
+  position: relative;
+}
+.header-chapter-one {
+  margin-left: 8.5rem;
+  margin-right: 2.1875rem;
+}
+.header-chapter-one,
+.header-chapter-two {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+}
+.header-chapter-background {
+  border-radius: 0.3125rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: auto;
+  margin-right: 0.9375rem;
+}
+.header-chapter-icon {
+  z-index: 3;
+}
+.header-chapter-text-one {
+  max-width: 9.3125rem;
+}
+.header-chapter-text-one,
+.header-chapter-text-two {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 129%;
+  color: #fff;
+}
+.header-chapter-text-two {
+  max-width: 8.375rem;
+}
+.header-content-button {
+  position: relative;
+  border: 1.3px solid #fff;
+  border-radius: 0.3125rem;
+  padding: 0.9375rem 1.5625rem;
+  width: 9.9375rem;
+  height: 3.3125rem;
+  background: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  color: #6f73ee;
+  margin-left: 8.5625rem;
+  font-family: "Jost", sans-serif;
+  margin-top: 1.675rem;
+  cursor: pointer;
+}
+.section-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 2.1875rem;
+  text-transform: uppercase;
+  color: #282739;
+}
+.section-testdrive-wripper {
+  height: auto;
+}
+.define-the-model-wrapper {
+  font-family: "Jost", sans-serif;
+  color: #282739;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.55rem;
+}
+.define-the-model-title {
+  display: flex;
+  line-height: 148.9%;
+  margin-top: 1.75rem;
+  width: 89%;
+}
+.define-the-model-content {
+  width: 89%;
+  margin-left: 8.4375rem;
+}
+.define-the-model-text {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 119%;
+}
+.define-the-model-photo {
+  width: autocomplete;
+}
+.define-the-model-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 1.125rem;
+}
+.define-the-model-list-icon {
+  margin-right: 0.625rem;
+}
+.define-the-model-list-item {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.125rem;
+  margin-bottom: 0.8625rem;
+}
+.word-bold {
+  font-weight: 500;
+  margin-right: 0.3375rem;
+}
+.define-the-model {
+  margin-bottom: 5.95rem;
+  margin-top: 7.95rem;
+}
+.correct-riding {
+  margin-bottom: 6.25rem;
+}
+.correct-riding-wrapper {
+  font-family: "Jost", sans-serif;
+  color: #282739;
+  display: flex;
+}
+.correct-riding-content {
+  margin-left: 5.9375rem;
+}
+.correct-riding-title {
+  width: 100%;
+  margin-top: 1.85rem;
+  margin-bottom: 1.775rem;
+  line-height: 147.5%;
+}
+.correct-riding-text {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 119%;
+  margin-bottom: 1.225rem;
+}
+.correct-riding-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.correct-riding-list-item {
+  margin-bottom: 0.625rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.9rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+.correct-riding-list-icon {
+  margin-right: 0.625rem;
+}
+.section-testdrive {
+}
+.testdrive-models {
+  margin-bottom: 6.15rem;
+}
+.testdrive-models-card {
+  width: 15.9375rem;
+  height: 30.75rem;
+  border: 1.5px solid #eaebed;
+  border-radius: 0.625rem;
+  font-family: "Jost", sans-serif;
+  color: #282739;
+}
+.testdrive-models-card:not(:last-child) {
+  margin-right: 1.875rem;
+}
+.testdrive-models-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 97%;
+}
+.testdrive-models-icon {
+  margin-right: 0.6375rem;
+}
+.testdrive-models-value {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #5d6c7b;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0.55rem;
+}
+.testdrive-models-value-time {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #5d6c7b;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0.25rem;
+}
+.models-value-new {
+  margin-right: 0.25rem;
+}
+.testdrive-models-title {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  line-height: 139.1%;
+  margin-bottom: 3.2063rem;
+}
+.testdrive-models-content {
+  max-width: 69.25rem;
+  margin: auto;
+}
+.testdrive-models-options-wrp {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.025rem;
+}
+.testdrive-models-name {
+  font-weight: 600;
+  margin-top: 0.35rem;
+  margin-bottom: 1.45rem;
+  letter-spacing: 1px;
+}
+.models-card-container {
+  max-width: 12.875rem;
+  margin: auto;
+  position: relative;
+  top: 214px;
+}
+.testdrive-models-oldprice {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-decoration: line-through;
+  color: #5d6c7b;
+}
+.testdrive-models-newprice {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #282739;
+}
+.testdrive-models-icon-wrp {
+  display: flex;
+  gap: 0.5625rem;
+  margin-left: 1.6313rem;
+  margin-bottom: 0;
+}
+.testdrive-models-price-wrp {
+  display: flex;
+  margin-top: 0.7125rem;
+  margin-bottom: 1.1125rem;
+}
+.testdrive-models-image {
+  position: absolute;
+}
+.testdrive-models-cards-wrp {
+  display: flex;
+}
+.testdrive-models-background {
+  border-radius: 100%;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testdrive-models-icon-background {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1.3px solid #eaebed;
+  align-items: center;
+  justify-content: center;
+}
+.testdrive-models-icon-top {
+  stroke-width: 1.3px;
+  z-index: 3;
+  margin-top: 1.125rem;
+  margin-right: 0.825rem;
+}
+.testdrive-models-label {
+  background: #ee685f;
+  border-radius: 5px;
+  width: 2.5625rem;
+  height: 1.5625rem;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.675rem;
+  margin-left: 0.5875rem;
+}
+.testdrive-models-label-new {
+  font-family: "Jost", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 3.9375rem;
+  height: 1.5625rem;
+  background: #75d14a;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #fff;
+  margin-top: 0.675rem;
+  margin-left: 0.5875rem;
+}
+.testdrive-models-label-wrp {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.testdrive-models-button {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #fff;
+  background: #6f73ee;
+  border-radius: 5px;
+  padding: 0.825rem 1.25rem;
+  width: 12.875rem;
+  height: 2.3125rem;
+  border-style: none;
+}
+.no-models-content {
+  position: absolute;
+}
+.no-models-background {
+  background: #f4f7fb;
+  border-radius: 0.625rem;
+  width: 100%;
+  height: 27.8125rem;
+  position: relative;
+}
+.no-models-title {
+  width: 50%;
+  height: auto;
+  margin-top: 5.8063rem;
+  margin-left: 8.4375rem;
+  margin-right: 2.625rem;
+  line-height: 138.9%;
+}
+.no-models-text {
+  font-family: "Jost", sans-serif;
+  margin-top: 2.4rem;
+  margin-left: 8.4375rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #282739;
+  width: 50%;
+  margin-bottom: 1.3125rem;
+}
+.no-models-input-wrp {
+  display: flex;
+}
+.no-models-input {
+  width: 65%;
+}
+.no-models-checkbox-wrp {
+  display: flex;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 117%;
+  color: #282739;
+  margin-left: 8.5rem;
+  margin-top: 1.25rem;
+}
+.client-photo {
+  position: absolute;
+  bottom: 0;
+  right: 11.25rem;
+  max-width: 45rem;
+}
+.input-phone-mask {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 0.15em;
+  text-align: center;
+  color: #5d6c7b;
+  border-style: none;
+  background-color: #fff;
+  border: 1px solid #eaebed;
+  border-radius: 5px;
+  padding: 0.9375rem 1.4625rem;
+  width: 31.5%;
+  margin-left: 8.5rem;
+  margin-right: 1.25rem;
+}
+.no-models-button {
+  font-family: "Jost", sans-serif;
+  background: #6f73ee;
+  border-radius: 5px;
+  padding: 1.0375rem 1.6rem;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  border-style: none;
+  opacity: 6 !important;
+}
+.no-models-checkbox {
+  margin-top: -0.4375rem;
+  border-style: none;
+  background: #fff;
+}
+.no-models-checkbox-text {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+.no-models-label {
+  margin-left: 0.85rem;
+  width: 45%;
+}
+.no-models {
+  margin-bottom: 6.35rem;
+}
+.footer-top {
+  background: #6f73ee;
+  display: flex;
+}
+.footer-top-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  line-height: 142.6%;
+  color: #fff;
+  width: 31%;
+  padding-top: 1.7rem;
+  padding-bottom: 1.2125rem;
+  margin-right: 5.9375rem;
+  margin-left: 10.3rem;
+}
+.footer-top-email {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  border-style: none;
+  margin-right: 1.25rem;
+  justify-content: flex-start;
+  margin-top: 1.5375rem;
+  padding-left: 1.5625rem;
+  padding-right: 15.875rem;
+  height: 3.3125rem;
+}
+.footer-top-subscription {
+  font-family: "Jost", sans-serif;
+  background: #fff;
+  border-radius: 5px;
+  padding: 0.9375rem 1.5625rem;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  color: #6f73ee;
+  border-style: none;
+  width: 8.75rem;
+  height: 3.3125rem;
+  margin-top: 1.5375rem;
+  margin-bottom: 1.3125rem;
+}
+.container-footer-wrapper {
+  background: #f4f7fb;
+}
+.container-footer {
+  width: 69.375rem;
+  margin: auto;
+}
+.footer-menu-wrapper {
+  display: flex;
+  padding-top: 2.875rem;
+  margin-bottom: 3.5875rem;
+}
+.footer-menu-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #282739;
+  margin-top: 0.225rem;
+  margin-bottom: 1.2625rem;
+  width: 100%;
+}
+.footer-menu-list,
+.footer-menu-buyers2 {
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer-menu-catalog {
+  margin-right: 7.8125rem;
+}
+.footer-menu-buyers {
+  min-width: 7rem;
+}
+.footer-menu-buyers2-wrp {
+  margin-top: 1.7625rem;
+  margin-left: 2.75rem;
+  margin-right: 6.875rem;
+}
+.footer-menu-link {
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #5d6c7b;
+}
+.footer-menu-item {
+  margin-bottom: 0.725rem;
+}
+.footer-menu-title-contacts {
+  margin-bottom: 1.0625rem;
+}
+.footer-menu-contacts {
+  display: flex;
+}
+.footer-menu-contacts-wrp-call,
+.footer-menu-contacts-wrp-service {
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer-menu-contacts-call {
+  min-width: 6.8125rem;
+  margin-right: 2.6rem;
+}
+.footer-menu-link-contacts {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #282739;
+  font-family: "Jost", sans-serif;
+}
+.footer-menu-link-phone-number {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #282739;
+  text-decoration: none;
+  margin-top: 0.3125rem;
+  margin-bottom: 0.4375rem;
+}
+.footer-menu-link-schedule {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #5d6c7b;
+  text-decoration: none;
+}
+.footer-menu-contacts-service {
+  margin-top: 1.6625rem;
+  margin-right: 4.75rem;
+}
+.footer-menu-item-contacts {
+  margin-bottom: 0.475rem;
+}
+.footer-menu-link-call {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #6f73ee;
+  text-decoration: none;
+  margin-top: 0.4375rem;
+}
+.footer-bottom-seporator {
+  border: 1px solid #5d6c7b;
+  width: 69.375rem;
+  opacity: 0.15;
+}
+.footer-bottom-logo {
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  color: #282739;
+  margin-right: 3.75rem;
+  padding-top: 1px;
+}
+.footer-bottom-social-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 1.9063rem;
+  margin-bottom: 1.7125rem;
+}
+.footer-bottom-social-gp {
+  padding-top: 2.2px;
+  margin-right: 0.625rem;
+}
+.footer-bottom-social-as {
+  padding-top: 0.35rem;
+  margin-right: 15.62rem;
+}
+.footer-bottom-social-wrp {
+  background: #fff;
+  border-radius: 5px;
+  width: 7.6875rem;
+  height: 2.8125rem;
+  padding-left: 0.625rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.footer-bottom-social-wrp:not(:last-child) {
+  margin-right: 0.625rem;
+}
+.footer-bottom-social {
+  margin-top: 0.3125rem;
+}
+.footer-bottom-icon {
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.8125rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.footer-bottom-social-text-vk,
+.footer-bottom-social-text-ytube,
+.footer-bottom-social-text-tgblue {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #282739;
+  position: absolute;
+}
+.footer-bottom-social-text-vk {
+  left: 2.7rem;
+  top: 0.4125rem;
+}
+.footer-bottom-social-text-ytube {
+  left: 2.8rem;
+  top: 0.4125rem;
+}
+.footer-bottom-social-text-tgblue {
+  left: 2.8rem;
+  top: 0.425rem;
+}
+.footer-bottom-social-count {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 0.63rem;
+  color: #5d6c7b;
+  position: absolute;
+  top: 1.5437rem;
+  left: 2.8rem;
+}
+.footer-bottom-icon-ytube {
+  margin-left: 0.1875rem;
+}
+.footer-bottom-down-wrapper {
+  display: flex;
+  cursor: pointer;
+}
+.footer-bottom-down-requisites,
+.footer-bottom-down-politics {
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #5d6c7b;
+  padding-top: 0.8375rem;
+}
+.footer-bottom-down-requisites {
+  margin-right: 2.75rem;
+  margin-bottom: 1.4375rem;
+}
+.footer-bottom-down-politics {
+  margin-right: 24.0375rem;
+}
+.footer-bottom-down-social {
+  display: flex;
+  margin-top: 0.525rem;
+}
+.footer-bottom-down-social-wrp {
+  display: flex;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer-bottom-down-icon:not(:last-child) {
+  margin-right: 0.3044rem;
+}
+.footer-bottom-down-social-onlinechat {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #282739;
+  font-family: "Jost", sans-serif;
+  margin-top: 0.225rem;
+  margin-left: 1.9856rem;
+  margin-right: 1rem;
+}
+.footer-bottom-down-social-chat {
+  display: flex;
+}
+.footer-bottom-down-chat-icon {
+  margin-top: 0.2562rem;
+}
+.footer-bottom-down-chat-icon:not(:last-child) {
+  margin-right: 0.875rem;
+}
+.modal-dialog-wrp {
+  padding-left: 2.5rem;
+  position: relative;
+  display: flex;
+  padding-top: 2.4rem;
+}
+.modal-dialog-wrp-left {
+  width: 47.2%;
+}
+.modal-dialog {
+  font-family: "Jost", sans-serif;
+  border-radius: 5px;
+  width: 49.375rem;
+  height: 36.875rem;
+  background: #fff;
+  display: flex;
+  /* overflow: hidden; */
+  position: relative;
+  animation: modalSlideIn 0.3s ease;
+  box-shadow: 0 1.25rem 60px rgba(0, 0, 0, 0.3);
+}
+.modal-dialog-image {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1.0869rem !important;
+  margin-top: 0.5rem !important;
+}
+
+.close-icon {
+  position: absolute;
+  top: 0.9375rem;
+  right: 0.9375rem;
+  z-index: 10;
+  position: absolute;
+}
+
+.modal-text {
+  font-weight: 600;
+  font-size: 1.5625rem;
+  text-transform: uppercase;
+  color: #282739;
+  margin-top: 3rem;
+  width: 83.5%;
+  margin-top: 0.15rem;
+  line-height: 141.7%;
+  margin-bottom: 1.55rem;
+}
+.modal-textp {
+  font-family: "Jost", sans-serif;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  line-height: 125%;
+  text-transform: lowercase !important;
+  margin-top: 1.8125rem !important;
+}
+.modal-text5minute {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #282739;
+  width: 82%;
+  margin-bottom: 5.575rem;
+  line-height: 138% !important;
+}
+.modal-text-connection {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #5d6c7b;
+  margin-bottom: 1.25rem;
+}
+.input-phone-number {
+  border: 1px solid #eaebed;
+  border-radius: 0.3125rem;
+  padding: 0.9375rem 1.5625rem;
+  width: 16.4375rem;
+  height: 3.3125rem;
+  margin-bottom: 1.25rem;
+}
+.modal-form {
+  width: 77%;
+}
+.modal-form-button {
+  border-radius: 5px;
+  padding: 0.9375rem 1.5625rem;
+  background: #6f73ee;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  border-style: none;
+  width: 16.4375rem;
+  height: 3.3125rem;
+  margin-bottom: 0;
+}
+.notify-text {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 117%;
+  color: #282739;
+}
+.notify-text-politics {
+  color: #6f73ee;
+}
+
+/* Модал по умолчанию скрыт */
+#feedback-modal {
+  display: none !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+  box-sizing: border-box;
+}
+
+/* Показ модала */
+#feedback-modal.is-open {
+  display: flex !important;
+  opacity: 1;
+}
+
+@keyframes modalSlideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.modal-policy {
+  margin-top: 1rem;
+}
+
+.policy-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6875rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8b8b8b;
+  user-select: none;
+  margin-left: 0.875rem;
+}
+
+.policy-checkbox input {
+  display: none; /* Скрываем стандартный чекбокс */
+}
+
+.checkbox-custom {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 0.25rem;
+  flex-shrink: 0;
+  position: relative;
+  transition: all 0.2s ease;
+  background: white;
+  margin-top: 0.125rem;
+}
+
+.policy-checkbox:hover .checkbox-custom {
+  border-color: #7c5cef;
+}
+
+.policy-checkbox input:checked + .checkbox-custom::after {
+  content: "✓";
+
+  /* content: url("img/check.svg"); */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #6f73ee;
+
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.policy-text {
+  flex: 1;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 117%;
+  color: #282739;
+}
+
+.policy-link {
+  color: #6f73ee;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+}
+
+.policy-link:hover {
+  text-decoration: underline;
+}
+
+/* Адаптив */
+@media (max-width: 480px) {
+  .policy-checkbox {
+    font-size: 0.8125rem;
+    gap: 8px;
+  }
+
+  .checkbox-custom {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+}
